@@ -4,9 +4,33 @@
 <head>
    <meta charset="utf-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <title>Lab 5: Responsive Design</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Lambert Lab 5: Responsive Design</title>
+
+      <!-- CDN link to SlickNav CSS  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/slicknav.min.css">
+   
+   <!-- Link to your custom stylesheet -->
+   <link rel="stylesheet" href="main.css">
+
+   <!-- GOOGLE FONTS LINK -->
    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet" type="text/css">
-   <link rel="stylesheet" type="text/css" href="main.css">
+
+   <!-- CDN link to jQuery (necessary for SlickNav jQuery to work -->
+   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+   
+   <!-- CDN link to SlickNav jQuery -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/jquery.slicknav.min.js"></script>
+
+   <!-- call SlickNav on appropriate media query -->
+   <script type="text/javascript">
+      $(document).ready(function () {
+        $(".menubar").slicknav({
+            prependTo: "#mobilemenu"
+        });
+    });
+   </script>
+
 </head>
 
 <body>
@@ -21,6 +45,11 @@
       </div>
    </header>
    <!-- end header -->
+
+   <!-- placeholder for SlickNav menu -->
+   <nav id="mobilemenu">
+
+   </nav>
 
    <!--start navigation area -->
    <nav class="nav">

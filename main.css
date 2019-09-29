@@ -1,3 +1,8 @@
+/* bring borders inside box sizing for all elements unless superceded */
+* {
+   box-sizing: border-box;
+}
+
 /* general */
 body,
 html {
@@ -72,6 +77,12 @@ ul {
 }
 
 /* navigation */
+
+/* hide SlickNav in desktop-first design */
+.slicknav {
+   display: none;
+ }
+
 .nav {
    width: 800px;
    margin-left: auto;
@@ -304,4 +315,18 @@ footer a {
 
 }
 
-/* PUT ALL YOUR MEDIA QUERIES HERE */
+
+
+/* *********************************** MEDIA QUERIES *********************************** */
+
+/* tablet portrait layout (768px to 959px) */
+@media only screen and (max-width: 959px) {
+}
+ 
+/* mobile landscape layout (480px to 767px) */
+@media only screen and (max-width: 767px) {
+}
+ 
+/* mobile portrait layout (479px or less) */
+@media only screen and (max-width: 479px) {
+}
