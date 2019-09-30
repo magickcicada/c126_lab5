@@ -25,8 +25,8 @@
    <!-- call SlickNav on appropriate media query -->
    <script type="text/javascript">
       $(document).ready(function () {
-        $(".menubar").slicknav({
-            prependTo: "#mobilemenu"
+        $("#nav_full").slicknav({
+            prependTo: "#nav_mobile"
         });
     });
    </script>
@@ -40,17 +40,17 @@
       <div class="header_inner">
          <img class="header_logo" src="images/dogLogo.jpg" alt="a logo of a dog">
          <h1 class="header_title">
-            non-responsive website
+            responsive website
          </h1>
       </div>
    </header>
    <!-- end header -->
 
    <!-- placeholder for SlickNav menu -->
-   <nav id="mobilemenu"></nav>
+   <nav id="nav_mobile"></nav>
 
    <!--start navigation area -->
-   <nav id="nav">
+   <nav id="nav_full">
       <ul class="nav_list">
          <li class="nav_item"><a href="#">one</a></li>
          <li class="nav_item"><a href="#">two</a></li>
@@ -73,7 +73,7 @@
          </section>
 
          <section class="news top-news">
-            <h2 class="news_title">some kafka<a href="#" class="news_more">+ more</a></h2>
+            <h2 class="news_title">Top News<a href="#" class="news_more">+ more</a></h2>
             <ul>
                <li class="top-news_item">
                   <a href="#">Gregor Samsa woke from troubled dreams!</a>
@@ -97,42 +97,42 @@
                <table class="table">
                   <thead>
                      <tr>
-                        <th>date</th>
-                        <th>event</th>
-                        <th>time</th>
-                        <th>place</th>
+                        <th>Day</th>
+                        <th>Event</th>
+                        <th>Time</th>
+                        <th>Place</th>
                      </tr>
                   </thead>
                   <tbody>
                      <tr>
                         <td>Thursday</td>
-                        <td>Wake up</td>
-                        <td>6 am</td>
-                        <td>Home</td>
+                        <td>Bus to CH</td>
+                        <td>6:55 am</td>
+                        <td>Depot</td>
                      </tr>
                      <tr>
                         <td>Thursday</td>
-                        <td>Wake up</td>
-                        <td>6 am</td>
-                        <td>Home</td>
+                        <td>ECON580</td>
+                        <td>9:30 am</td>
+                        <td>Gardner 308</td>
                      </tr>
                      <tr>
                         <td>Thursday</td>
-                        <td>Wake up</td>
-                        <td>6 am</td>
-                        <td>Home</td>
+                        <td>GEOG391</td>
+                        <td>11:00 am</td>
+                        <td>Mitchell 009</td>
                      </tr>
                      <tr>
                         <td>Thursday</td>
-                        <td>Wake up</td>
-                        <td>6 am</td>
-                        <td>Home</td>
+                        <td>COMP126</td>
+                        <td>12:30 pm</td>
+                        <td>Sitterson 014</td>
                      </tr>
                      <tr>
                         <td>Thursday</td>
-                        <td>Wake up</td>
-                        <td>6 am</td>
-                        <td>Home</td>
+                        <td>Bus to GSO</td>
+                        <td>4:40 pm</td>
+                        <td>Columbia & Rosemary</td>
                      </tr>
 
                   </tbody>
@@ -143,23 +143,23 @@
                <span class="weather_location">Carrboro, NC</span>
                <span class="weather_desc">Sunny</span>
                <span class="weather_today">
-                  <img class="weather_today_image" src="images/weather.png" alt="icon of a partially sunny day"><span
+                  <img class="weather_today_image" src="./images/weather.png" alt="icon of a partially sunny day"><span
                      class="weather_today_temp">80</span><span class="weather_today_deg">&deg;F</span>
                </span>
                <ul class="weather_next">
                   <li class="weather_next_item">
                      <span>Mon</span>
-                     <img class="weather_next_image" src="images/sunny.png" alt="icon of a sunny day">
+                     <img class="weather_next_image" src="./images/sunny.png" alt="icon of a sunny day">
                      <span>13 &deg;C</span>
                   </li>
                   <li class="weather_next_item">
                      <span>Tues</span>
-                     <img class="weather_next_image" src="images/cloudy.png" alt="icon of a cloudy day">
+                     <img class="weather_next_image" src="./images/cloudy.png" alt="icon of a cloudy day">
                      <span>13 &deg;C</span>
                   </li>
                   <li class="weather_next_item">
                      <span>Wed</span>
-                     <img class="weather_next_image" src="images/cloudy.png" alt="icon of a cloudy day">
+                     <img class="weather_next_image" src="./images/cloudy.png" alt="icon of a cloudy day">
                      <span>13 &deg;C</span>
                   </li>
 
@@ -171,7 +171,7 @@
 
          <!-- start .recent-news section: contains "some more" header and short articles (.snippets) with thumbnail photos -->
          <section class="recent-news">
-            <h2 class="news_title">some more<a href="#" class="news_more">+ more</a></h2>
+            <h2 class="news_title">Other News<a href="#" class="news_more">+ more</a></h2>
             <ul>
                <li class="snippet">
                   <img class="snippet_thumbnail" src="images/grady.jpg" alt="my dog">
